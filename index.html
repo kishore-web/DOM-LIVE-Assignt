@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header><h1>Filterable Gallery</h1></header>
+  <h2>Add Product</h2>
+  <form action="" id="form">
+    <label for="image">Enter Image URL</label>
+    <input type="url" id="url">
+    <label for="image">Select Type</label>
+    <select name="items" id="select-items">
+      <option value="Headphones" selected>Headphones</option>
+      <option value="Laptops">Laptops</option>
+      <option value="Mobiles">Mobiles</option>
+    </select>
+    <button type="submit" id="submit">Add</button>
+  </form>
+<p id="warning"></p>
+  <ul id="filter">
+    <li class="fil">All</li>
+    <li class="fil">Headphones</li>
+    <li class="fil">Laptops</li>
+    <li class="fil">Mobiles</li>
+  </ul>
+  <div id="main-container">
+  </div>
+  <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
