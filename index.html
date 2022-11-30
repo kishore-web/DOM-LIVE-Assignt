@@ -18,21 +18,21 @@
     <input type="url" id="url">
     <label for="image">Select Type</label>
     <select name="items" id="select-items">
-      <option value="Headphones" selected>Headphones</option>
-      <option value="Laptops">Laptops</option>
-      <option value="Mobiles">Mobiles</option>
+      <option value="headphones">Headphones</option>
+      <option value="laptops">Laptops</option>
+      <option value="mobiles">Mobiles</option>
     </select>
     <button type="submit" id="submit">Add</button>
   </form>
 <p id="warning"></p>
   <ul id="filter">
-    <li class="fil">All</li>
-    <li class="fil">Headphones</li>
-    <li class="fil">Laptops</li>
-    <li class="fil">Mobiles</li>
+    <li class="fil" data-filter="all">All</li>
+    <li class="fil" data-filter="headphones">Headphones</li>
+    <li class="fil" data-filter="laptops">Laptops</li>
+    <li class="fil" data-filter="mobiles">Mobiles</li>
   </ul>
   <div id="main-container">
   </div>
-  <script src="./index.js" charset="UTF-8"></script>
+  <script src="index.js" charset="UTF-8"></script>
 </body>
 </html>
