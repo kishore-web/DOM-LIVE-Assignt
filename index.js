@@ -4,12 +4,9 @@ let mainContainer = document.getElementById("main-container")
 let selectItems= document.getElementById("select-items")
 let warning = document.getElementById("warning")
 
-addButton.addEventListener("click", (e)=> {
-  e.preventDefault();
-})
-
 addButton.addEventListener("click", addImage);
 function addImage() {
+  e.preventDefault();
   if(inputVal.value=="") {
     warning.innerText = "Please enter valid URL"
     setTimeout (() => {
